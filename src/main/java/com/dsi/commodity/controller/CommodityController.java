@@ -95,7 +95,7 @@ public class CommodityController {
 	}
 
 	@DeleteMapping("/commodities")
-	public ResponseEntity<HttpStatus> deleteAllCommoditys() {
+	public ResponseEntity<HttpStatus> deleteAllCommodities() {
 		try {
 			commodityRepository.deleteAll();
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
